@@ -20,7 +20,6 @@ li{
 .toppage-contents-image{
 position: relative;
 z-index: 0;
-margin-top: 150px;
 }
 .toppage-contents-image img{
   margin: 0 0 0 auto;
@@ -31,7 +30,7 @@ margin-top: 150px;
 .toppage-contents-others{
   position: absolute;
   z-index: 1;
-  top: 40%;
+  top: 20%;
   left: 30%;
   color: #64b4b4
 }
