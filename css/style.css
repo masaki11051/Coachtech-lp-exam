@@ -1,6 +1,7 @@
 .toppage-overall{
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +49,6 @@ z-index: 0;
   color: #b3316b
 }
 .toppage-centence2{
-  line-height: 0em;
   font-size: 20px;
 }
 .toppage-centence2::before {
@@ -72,11 +72,11 @@ z-index: 0;
 .news-contentsall{
   margin-bottom: 30px;
   color: #b3316b;
-  line-height: 0.5em
 }
 .news-title{
 font-size: 8px;
 font-family: 'Sarabun', sans-serif;
+margin-bottom: 10px;
 }
 .news-contect1{
 font-size: 16px;
@@ -113,15 +113,16 @@ a{
 .about-title{
   padding-top: 25px;
   text-align: center;
-  line-height: 0.5em
 }
 .about-title1{
   font-size: 8px;
+  margin-bottom: 10px;
   font-family: 'Sarabun', sans-serif;
   color: #b3316b;
 }
 .about-title2{
-  font-size: 16px;
+  font-size: 20px;
+  margin-bottom: 30px;
   color: gray;
   font-weight: bold;
 }
@@ -131,10 +132,12 @@ margin: 0 auto;
 width: 800px;
 height: 250px;
 }
-.about-centence{
+.about-centence p{
 display: inline-block;
 width: 100%;
 color: gray;
+line-height: 1.5em;
+margin: 0px 0px 1em 0px;
 }
 .about-image{
 display: inline-block;
@@ -151,11 +154,13 @@ width: 100%
   margin: 50px auto;
 }
 .service-title1{
+  margin-bottom: 15px;
   color: #b3316b;
   font-size: 8px;
   font-family: 'Sarabun', sans-serif;
 }
 .service-title2{
+  margin-bottom: 15px;
   font-size: 16px;
   font-weight: bold;
   color: gray;
@@ -168,65 +173,69 @@ grid-template-columns: 1fr 1fr;
 }
 .service-main img{
   width: 110px;
-  line-height: 0.5em
 }
 .service-box1{
   grid-column: 1/2;
   grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  line-height: 0.5em;
   color: white;
   background-color: #b31667;
 }
+.service-box1 img{
+  padding-bottom: 15px;
+}
 .service-box1 p{
+  padding: 0px 50px;
   text-align: left;
   line-height: 1.5em;
-  padding:0px 50px;
   font-size: 13px;
 }
 .service-box2{
   grid-column: 2/3;
   grid-row: 1/2;
-  display: flex;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   padding: 15px;
   color: white;
   background-color: #b35b8b;
 }
 .service-box2-image{
   display: inline-block;
-  vertical-align: middle;
+
 }
 .service-box2-centence{
   display: inline-block;
-  vertical-align: middle;
   padding-left: 15px;
-  line-height: 0.5em;
+  line-height: 1.5em;
 }
 .service-box2-centence p{
   font-size: 13px;
-  line-height: 1.5em;
 }
 .service-box3{
   grid-column: 2/3;
   grid-row: 2/3;
-  display: flex;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   padding: 15px;
   color: white;
   background-color: #bd9cae;
 }
 .service-box3-image{
   display: inline-block;
-  vertical-align: middle;
 }
 .service-box3-centence{
   display: inline-block;
-  vertical-align: middle;
   padding-left: 15px;
-  line-height: 0.5em;
+  line-height: 1.5em;
 }
 .service-box3-centence p{
   font-size: 13px;
-  line-height: 1.5em;
 }
 
 /* ここからblog */
@@ -239,11 +248,13 @@ grid-template-columns: 1fr 1fr;
   padding: 50px;
 }
 .blog-title1{
+  padding-bottom: 15px;
   color: #b3316b;
   font-size: 8px;
   font-family: 'Sarabun', sans-serif;
 }
 .blog-title2{
+  padding-bottom: 15px;
   font-size: 16px;
   font-weight: bold;
   color: gray;
@@ -259,21 +270,21 @@ grid-template-columns: 1fr 1fr;
   background-color:white;
 }
 .blog-contencts1{
-position: relative;
+  position: relative;
 }
 .blog-contencts1 p{
-position: absolute;
-margin-top: 0%;
-top: 0%;
-left: 0%;
-width: 60px;
-height: 30px;
-border-radius: 10px 0px  0px  0px ;
-background-color: #b11364;
-text-align: center;
-line-height:30px;
-color:#fff;
-font-size: 14px;
+  position: absolute;
+  margin-top: 0%;
+  top: 0%;
+  left: 0%;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px 0px  0px  0px ;
+  background-color: #b11364;
+  text-align: center;
+  line-height:30px;
+  color:#fff;
+  font-size: 14px;
 }
 .blog-contencts1 img{
   width:100%;
@@ -283,13 +294,17 @@ font-size: 14px;
   padding: 5px 20px;
 }
 .blog__content-ttl{
-    font-size: 13px;
-    color: gray;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.8em;
+  font-size: 13px;
+  color: gray;
 }
 .blog__content-tag{
   display: flex;
   justify-content: space-between;
   font-size: 12px;
+  color: gray;
 }
 .blog__content-tag1 {
   display: inline-block;
@@ -316,11 +331,14 @@ font-size: 14px;
   margin: 0px auto;
 }
 .company-title1{
+  margin-top: 15px;
+  margin-bottom: 15px;
   color: #b3316b;
   font-size: 8px;
   font-family: 'Sarabun', sans-serif;
 }
 .company-title2{
+  margin-bottom: 30px;
   font-size: 16px;
   font-weight: bold;
   color: gray;
@@ -393,6 +411,8 @@ color:white;
   color:white;
 }
 .last-page-contents h4{
+  margin-top: 100px;
+  margin-bottom: 20px;
   text-align: center;
   color: gray;
 }
@@ -410,23 +430,23 @@ color:white;
   content: "";
   background: url(../img/mailicon.svg);
   background-size: cover;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: inline-block;
   transform: translate(0, -50%);
 }
 .lastpage-btn{
   position: relative;
   width: 200px;
-  padding: 15px 0px;
+  padding: 25px 20px;
   background: linear-gradient(90deg,#f92a94, #bd317a);
   box-shadow: 0px 5px 0px #a10a61;
   color: white;
   border-radius: 30px;
   text-align: center;
-  margin:30px auto 0;
+  margin:15px auto 0;
   display:block;
-  font-size: 14px;
+  font-size: 16px;
 }
 .copy-right-overall{
   margin-top: 80px;
